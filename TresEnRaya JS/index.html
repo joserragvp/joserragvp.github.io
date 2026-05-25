@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="menuInicio">
+        <h1>Bienvenido al Tres en Raya</h1>
+        <h2>Seleccione modo de juego</h2>
+
+        <button onclick="iniciarJuego('JvJ')">
+            Jugador vs Jugador
+        </button>
+
+        <button onclick="iniciarJuego('JvIA')">
+            Jugador vs IA
+        </button>
+
+    </div>
+
+    <div id="juego" style="display: none;">
+        <h1>Tres en Raya</h1>
+
+        <div id="contenedorMarcador">
+            <div id="Marcador"></div>
+        </div>
+
+        <div id="contenedorTurnos">
+            <div id="turnos"></div>
+        </div>
+
+        <div id="contenedorResultado"></div>
+
+        <table id="contenedorTablero">
+            <tr id="fila1">
+                <td>
+                    <button id="0" onclick="cambiar(0)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="1" onclick="cambiar(1)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="2" onclick="cambiar(2)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+
+            </tr>
+
+            <tr id="fila2">
+                <td>
+                    <button id="3" onclick="cambiar(3)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="4" onclick="cambiar(4)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="5" onclick="cambiar(5)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="fila3">
+                <td>
+                    <button id="6" onclick="cambiar(6)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="7" onclick="cambiar(7)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+                <td>
+                    <button id="8" onclick="cambiar(8)">
+                        <img src="Fotos/Interrogante.png">
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+
+        <div id="contenedorResultado">
+        </div>
+        <div id="reiniciarJuego">
+            <button id="nuevaPartida" onclick="reiniciar()">Volver a jugar</button>
+        </div>
+        <button id="volverAtras" onclick="history.back()">Volver</button>
+    </div>
+
+</body>
+
+</html>

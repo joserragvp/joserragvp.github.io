@@ -1,0 +1,31 @@
+[
+  {
+    "type": "java",
+    "name": "Mario Party",
+    "description": "Juego por turnos en Java tipo Mario Party, con tablero de casillas, dados y objetos que alteran el movimiento y el resultado de la partida.",
+    "image": "fotos/MarioParty.png",
+    "url": ""
+  },
+  {
+    "type": "java",
+    "name": "Ahorcado",
+    "description": "Juego del ahorcado en Java con palabras aleatorias, control de vidas y validación de letras, permitiendo jugar múltiples partidas desde consola.",
+    "image": "fotos/Ahorcado.png",
+    "url": ""
+  },
+  {
+    "type": "web",
+    "name": "Piedra Papel Tijera",
+    "description": "Juego interactivo en JS.",
+    "image": "",
+    "url": "PiedraPapelTijeraJS/index.html"
+  },
+  {
+    "type": "web",
+    "name": "Tres en Raya",
+    "description": "Juego interactivo en JS.",
+    "image": "",
+    "url": "TresEnRaya JS/index.html"
+  }
+  
+]

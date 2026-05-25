@@ -1,0 +1,111 @@
+#tituloJuego {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+body {
+    background: linear-gradient(180deg,#c2c2c2, #dbdbdb);
+    font-family: Arial, sans-serif;
+}
+
+#juego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedorBotones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedorBotones button {
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+button {
+    font-size: 18px;
+}
+
+button img {
+    display: flex;
+    height: 150px;
+    width: 150px;
+
+    background-color: rgb(224, 224, 224);
+}
+
+#textoMedio {
+    margin: 50px;
+}
+
+#contenedorEnemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Enemigo {
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(224, 224, 224);
+    border: 3px solid black;
+    border-radius: 3px;
+    margin: 10px;
+
+
+}
+
+#contenedorEjecucion {
+    display: flex;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+
+#contenedorResultado {
+    display: flex;
+    margin: 10px;
+}
+
+#contenedorMarcador {
+    display: flex;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+textarea
+{
+    resize: none;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.seleccionado {
+    outline: 3px solid black;
+    box-shadow: 0px 0px 20px black;
+}
+
+#contenedorVolver {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#volverAtras {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
