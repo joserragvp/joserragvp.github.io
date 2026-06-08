@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Trilero</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="barraSuperior">
+        <h1>Juego de Trilero</h1>
+
+        <button id="botonAjustes" onclick="toggleAjustes()">
+            <img src="fotos/iconoAjustes.png" class="ajustes">
+        </button>
+        <div id="menuAjustes" class="oculto">
+            <h3>Ajustes</h3>
+
+            <div class="ajuste">
+                <label>Audio Victoria</label>
+                <input type="range" id="volVictoria" min="0" max="1" step="0.01" value="0.5" oninput="cambiarVolVictoria()">
+            </div>
+
+            <div class="ajuste">
+                <label>Audio Derrota</label>
+                <input type="range" id="volDerrota" min="0" max="1" step="0.01" value="0.75" oninput="cambiarVolDerrota()">
+            </div>
+
+            <div class="ajuste">
+                <label>
+                    <input type="checkbox" id="modoOscuro" onchange="cambiarModoOscuro()">
+                    Modo oscuro
+                </label>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <div id="botonesJuego">
+
+        <button id="nuevaPartida" onclick="nuevaPartida()">
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Nueva Partida</span>
+        </button>
+    </div>
+
+    <h2>Elige un vaso</h2>
+
+
+
+    <div id="zonaVisual">
+        <button id="vaso0" onclick="levantar(0)" class="contenedorVaso">
+            <img src="fotos/vasoTrilero_180.png" class="vaso">
+        </button>
+
+        <button id="vaso1" onclick="levantar(1)" class="contenedorVaso">
+            <img src="fotos/pelota.png" class="pelota">
+            <img src="fotos/vasoTrilero_180.png" class="vaso">
+        </button>
+
+        <button id="vaso2" onclick="levantar(2)" class="contenedorVaso">
+            <img src="fotos/vasoTrilero_180.png" class="vaso">
+        </button>
+
+        <button id="vaso3" onclick="levantar(3)" class="contenedorVasoOculto">
+            <img src="fotos/vasoTrilero_180.png" class="vaso">
+        </button>
+
+    </div>
+
+
+
+    <div id="contenedorResultado">
+        <div id="Marcador"></div>
+    </div>
+
+    <div id="mensajeResultado">
+    <p id="mensaje"></p>
+    </div>
+    
+    
+    <div id="contenedorVolver">
+        <button id="volverAtras" onclick="history.back()">Volver</button>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

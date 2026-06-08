@@ -26,6 +26,13 @@
     "description": "Juego interactivo en JS.",
     "image": "",
     "url": "TresEnRaya JS/index.html"
+  },
+  {
+    "type": "web",
+    "name": "Juego Trilero",
+    "description": "Juego interactivo en JS.",
+    "image": "",
+    "url": "JuegoTrilero/index.html"
   }
   
 ]
