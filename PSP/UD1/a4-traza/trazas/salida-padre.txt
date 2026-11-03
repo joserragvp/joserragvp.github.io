@@ -1,0 +1,25 @@
+10:39:14.215 [trozo 0] lanzado PID 3636 rango [2,2500001)
+10:39:14.259 [trozo 1] lanzado PID 14056 rango [2500001,5000000)
+10:39:14.262 [trozo 2] lanzado PID 13648 rango [5000000,7499999)
+10:39:14.273 [trozo 3] lanzado PID 6892 rango [7499999,9999998)
+10:39:14.279 [trozo 4] lanzado PID 8424 rango [9999998,12499997)
+10:39:14.295 [trozo 5] lanzado PID 5452 rango [12499997,14999996)
+10:39:14.311 [trozo 6] lanzado PID 8868 rango [14999996,17499995)
+10:39:14.341 [trozo 7] lanzado PID 10088 rango [17499995,20000000)
+10:39:25.117 [trozo 1] terminado con código 0
+10:39:26.564 [trozo 2] terminado con código 0
+10:39:27.408 [trozo 3] terminado con código 0
+10:39:28.322 [trozo 4] terminado con código 0
+10:39:28.323 [trozo 5] terminado con código 1
+Trozo 5 falló con código 1: mira trazas/trozo-5.log
+10:39:29.578 [trozo 6] terminado con código 0
+10:39:30.163 [trozo 7] terminado con código 0
+ABORTADO: al menos un trozo falló
+
+trozo-5.log:
+Exception in thread "main" java.lang.NumberFormatException: For input string: "x"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:709)
+	at java.base/java.lang.Long.parseLong(Long.java:832)
+	at Calculo.main(Calculo.java:11)
+
